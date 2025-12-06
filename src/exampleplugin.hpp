@@ -1,5 +1,5 @@
 /**
- * Ashita Example Plugin - Copyright (c) 2023 Ashita Development Team
+ * Ashita Example Plugin - Copyright (c) 2025 Ashita Development Team
  * Contact: https://www.ashitaxi.com/
  * Contact: https://discord.gg/Ashita
  *
@@ -28,14 +28,14 @@
 
 /**
  * Main Ashita SDK Include
- * 
+ *
  * In order to compile a proper Ashita plugin, this header is required to be included. This header
  * includes the various other generally used parts of the Ashita SDK, as well as defines the various
  * SDK interfaces, enumerations, and other type definitions required.
- * 
+ *
  * To help with uniformed pathing, Ashita bases all SDK includes from a parent path. You can set this
- * parent path via the following environment variable on your system: 
- * 
+ * parent path via the following environment variable on your system:
+ *
  * ASHITA4_SDK_PATH
  */
 #include "Ashita.h"

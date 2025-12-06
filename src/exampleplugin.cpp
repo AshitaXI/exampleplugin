@@ -1,5 +1,5 @@
 /**
- * Ashita Example Plugin - Copyright (c) 2023 Ashita Development Team
+ * Ashita Example Plugin - Copyright (c) 2025 Ashita Development Team
  * Contact: https://www.ashitaxi.com/
  * Contact: https://discord.gg/Ashita
  *
@@ -771,6 +771,16 @@ __declspec(dllexport) auto __stdcall expCreatePlugin(const char* args) -> IPlugi
     UNREFERENCED_PARAMETER(args);
 
     return new exampleplugin::plugin();
+}
+
+/**
+ * Destroys the instance of this plugin that was previously returned from 'expCreatePlugin'.
+ *
+ * @param {void*} instance - The plugin instance that was created from 'expCreatePlugin'.
+ */
+__declspec(dllexport) auto __stdcall expDestroyPlugin(void* instance) -> void
+{
+    delete static_cast<exampleplugin::plugin*>(instance);
 }
 
 /**
